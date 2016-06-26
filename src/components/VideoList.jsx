@@ -1,6 +1,6 @@
 var VideoList = ({videos, click}) => (
   <div className="video-list media">
-    {videos.map(video => <VideoListEntry video={video} click={click} />)}
+    {videos.map((video, key) => <VideoListEntry key={key} video={video} click={click} />)}
   </div>
 );
 
